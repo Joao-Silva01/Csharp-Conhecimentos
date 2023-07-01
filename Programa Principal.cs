@@ -5,12 +5,15 @@ public class Programa
 {
     static void Main()
     {
-        Console.WriteLine("Tipos_e_Variaveis");
-        Tipos_e_Variaveis inf = new Tipos_e_Variaveis();
-        inf.V_ar();
+        Tipos_e_Variaveis teste1 = new Tipos_e_Variaveis();
+        teste1.V_ar();
         Console.WriteLine("=================================================");
-        Algumas_Funcoes_Estruturas informação = new Algumas_Funcoes_Estruturas();
-        informação.C_Porcen();
+        Algumas_Funcoes_Estruturas teste2 = new Algumas_Funcoes_Estruturas();
+        teste2.repeti();
+        Console.WriteLine("=================================================");
+        Etc teste3 = new Etc();
+        teste3.re();
+        Console.WriteLine("=================================================");
         Console.ReadLine();
     }
 }
@@ -75,7 +78,51 @@ public class Algumas_Funcoes_Estruturas
     }
     public void C_Porcen() 
     {
-       
+       const float porcentagem = 0.12f; const String produto = "Macarrão"; float salario, conta;
+        Console.Write("Salário: ");
+        salario = Convert.ToInt32(Console.ReadLine());
+        conta = salario * porcentagem;
+        Console.WriteLine("O produto {0} vai custa {1:c}({2:p} do Salário de{3:c})",produto,conta, porcentagem, salario);
+        
+    }
+    public void Condicional()
+    {
+        Inicio:
+        int idade; string nome;
+        Console.Write("Digite seu nome: ");
+        nome = Console.ReadLine();
+        Console.Write("Digite sua idade: ");
+        idade = int.Parse(Console.ReadLine());
+        if(idade < 18)
+        {
+            Console.WriteLine("Você é menor de idade, não está apto a trabalhar pesado.");
+            
+        }
+        else if(idade >= 60)
+        {
+            Console.WriteLine("Você já está na hora de se aposentar.");
+        }
+        else { Console.WriteLine("Você é maior de idade, já pode trabalhar."); }
+            goto Inicio;
+    }
+    public void repeti()
+    {
+        for(int cont= 1; cont < 11; cont++)
+        {
+            Console.WriteLine("Número: " + cont);
+            
+        }
+    }
+}
+public class Etc
+{
+    public void re()
+    {
+        string[] Comida = new string[3] {"Macarrão", "Feijão", "Arroz" };
+        float[] Preco_comida = { 12.34f, 4.75f, 10.50f };
+        for(int cont = 0; cont < Comida.Length; cont++) {
+            Console.WriteLine("Produto: {0}  \tPreço: {1:c}", Comida[cont], Preco_comida[cont]);
+        }
     }
 }
     
