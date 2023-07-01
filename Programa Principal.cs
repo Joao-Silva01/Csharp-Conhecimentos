@@ -5,14 +5,14 @@ public class Programa
 {
     static void Main()
     {
-        Tipos_e_Variaveis teste1 = new Tipos_e_Variaveis();
+        /*Tipos_e_Variaveis teste1 = new Tipos_e_Variaveis();
         teste1.V_ar();
         Console.WriteLine("=================================================");
         Algumas_Funcoes_Estruturas teste2 = new Algumas_Funcoes_Estruturas();
-        teste2.repeti();
+        teste2.repeti();*/
         Console.WriteLine("=================================================");
         Etc teste3 = new Etc();
-        teste3.re();
+        teste3.sw();
         Console.WriteLine("=================================================");
         Console.ReadLine();
     }
@@ -122,6 +122,40 @@ public class Etc
         float[] Preco_comida = { 12.34f, 4.75f, 10.50f };
         for(int cont = 0; cont < Comida.Length; cont++) {
             Console.WriteLine("Produto: {0}  \tPreço: {1:c}", Comida[cont], Preco_comida[cont]);
+        }
+    }
+    public void sw()
+    {
+        int indice = 1;
+        string[] cores = { "Azul", "Vermelho", "Amarelo", "Preto", "Rosa" };
+        Inicio:
+        foreach( string cor in cores)
+        {
+            Console.WriteLine("[{0}]Cor\t{1}",indice,cor);
+            indice++;
+        }
+        Console.Write("Digite um índice:");
+        int escolha = int.Parse(Console.ReadLine());
+        switch (escolha)
+        {
+            case 1:
+                Console.WriteLine("Você escolheu {0}", cores[0]);
+                break;
+            case 2:
+                Console.WriteLine("Você escolheu " + cores[1]);
+                break;
+            case 3:
+                Console.WriteLine("Você escolheu {0}", cores[2]);
+                break;
+            case 4:
+                Console.WriteLine("Você escolheu " + cores[3]);
+                break;
+            case 5:
+                Console.WriteLine("Você escolheu {0}", cores[4]);
+                break;
+            default:
+                Console.WriteLine("Índice errado!");
+                goto Inicio;
         }
     }
 }
