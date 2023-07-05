@@ -5,11 +5,11 @@ public class Programa
 {
     static void Main()
     {
-        /*Tipos_e_Variaveis teste1 = new Tipos_e_Variaveis();
+        Tipos_e_Variaveis teste1 = new Tipos_e_Variaveis();
         teste1.V_ar();
         Console.WriteLine("=================================================");
         Algumas_Funcoes_Estruturas teste2 = new Algumas_Funcoes_Estruturas();
-        teste2.repeti();*/
+        teste2.repeti();
         Console.WriteLine("=================================================");
         Etc teste3 = new Etc();
         teste3.Arr();
@@ -165,8 +165,8 @@ public class Etc
         num[1, 0] = 4; num[1, 1] = 5; 
         for(int cont = 0; cont < num.Length;cont++)
         {
-            Console.WriteLine("[{}] [{}]", num[]);
-        }
+           
+        }   
     }
 }
     
