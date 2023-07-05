@@ -12,7 +12,7 @@ public class Programa
         teste2.repeti();*/
         Console.WriteLine("=================================================");
         Etc teste3 = new Etc();
-        teste3.sw();
+        teste3.Arr();
         Console.WriteLine("=================================================");
         Console.ReadLine();
     }
@@ -156,6 +156,16 @@ public class Etc
             default:
                 Console.WriteLine("Índice errado!");
                 goto Inicio;
+        }   
+    }
+    public void Arr()
+    {
+        int[,] num = new int[2, 2];
+        num[0, 0] = 1; num[0, 1] = 2; 
+        num[1, 0] = 4; num[1, 1] = 5; 
+        for(int cont = 0; cont < num.Length;cont++)
+        {
+            Console.WriteLine("[{}] [{}]", num[]);
         }
     }
 }
