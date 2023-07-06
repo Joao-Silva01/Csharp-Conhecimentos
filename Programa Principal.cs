@@ -12,7 +12,9 @@ public class Programa
         teste2.repeti();
         Console.WriteLine("=================================================");
         Etc teste3 = new Etc();
-        teste3.Arr();
+        int subtração, soma, multi, divi;
+        soma = teste3.Out(6,2, out subtração, out multi, out divi);
+        Console.WriteLine("6 + 2 = {0}\n6 - 2 = {1}\n6 x 2 = {2}\n6 / 2 = {3}", soma, subtração, multi, divi);
         Console.WriteLine("=================================================");
         Console.ReadLine();
     }
@@ -124,7 +126,7 @@ public class Etc
             Console.WriteLine("Produto: {0}  \tPreço: {1:c}", Comida[cont], Preco_comida[cont]);
         }
     }
-    public void sw()
+    public void Cores()
     {
         int indice = 1;
         string[] cores = { "Azul", "Vermelho", "Amarelo", "Preto", "Rosa" };
@@ -158,15 +160,14 @@ public class Etc
                 goto Inicio;
         }   
     }
-    public void Arr()
+    public int Out(int n1,int n2, out int subtracao, out int multiplica, out int divisao)
     {
-        int[,] num = new int[2, 2];
-        num[0, 0] = 1; num[0, 1] = 2; 
-        num[1, 0] = 4; num[1, 1] = 5; 
-        for(int cont = 0; cont < num.Length;cont++)
-        {
-           //teste de repositorio
-        }   
+        int soma;
+        soma = n1 + n2 ;
+        subtracao = n1 - n2;
+        multiplica = n1 * n2;
+        divisao = n1 / n2;
+        return soma;
     }
 }
     
