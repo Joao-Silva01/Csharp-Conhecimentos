@@ -2,11 +2,11 @@
 
 public class Funções
 {
-    /*static void Main()
+    static void ain()
     {
         Console.Write("Hello Word");
         Console.ReadLine();
-    }*/
+    }
 }
 public class Algumas_Funcoes_Estruturas
 {

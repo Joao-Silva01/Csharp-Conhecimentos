@@ -2,10 +2,10 @@
 
 public class Estruturas
 {
-    /*static void Main()
+    static void ain()
     {
         
-    }*/
+    }
 }
 public class Etc
 {

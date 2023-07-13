@@ -2,7 +2,7 @@
 
 public class Métodos_Array
 {
-    static void Main()
+    static void ain()
     {
         Array_Mtds teste = new Array_Mtds();
         teste.Array_SR();
@@ -47,6 +47,7 @@ public class Array_Mtds
         Console.WriteLine("Array Original:");
         foreach (int n in Num)
         {
+
             Console.Write("{0} |", n);
         }
         Array.Sort(Num);

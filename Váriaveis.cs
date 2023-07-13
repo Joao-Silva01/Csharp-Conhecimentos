@@ -3,12 +3,12 @@
 
 public class Váriaveis
 {
-    /*static void Main()
+    static void ain()
     {
         Tipos_e_Variaveis teste1 = new Tipos_e_Variaveis();
         teste1.V_ar();
         Console.ReadLine();
-    }*/
+    }
 }
 public class Tipos_e_Variaveis
 {
